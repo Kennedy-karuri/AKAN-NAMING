@@ -20,3 +20,10 @@
     
     
 }
+h1{
+    font-stretch: expanded;
+    font-weight: bolder;
+    text-align: center;
+    font-style: italic;
+    text-decoration-line: underline;
+}
