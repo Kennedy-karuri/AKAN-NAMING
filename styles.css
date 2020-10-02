@@ -1,0 +1,22 @@
+.nav{
+    text-align: center;
+    font-size: large;
+    font-weight:bolder ;
+    flex: inherit;
+    word-spacing:1cm ;
+    
+    
+}
+    
+.nav li{
+    display: inline-flex;
+    
+    
+}
+.nav ul{
+    list-style: none;
+    background-color: white;
+    text-align:center;
+    
+    
+}
