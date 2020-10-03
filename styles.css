@@ -26,4 +26,16 @@ h1{
     text-align: center;
     font-style: italic;
     text-decoration-line: underline;
+    color: white;
 }
+p{
+    font-size: 0.8cm;
+    color:white;
+ }
+ #images{
+     text-align: center;
+     display: flex;
+ }
+ .home{
+     background-color: black;
+ }
