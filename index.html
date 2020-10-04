@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">AKAN NAMES</h1>
@@ -27,12 +26,10 @@
     </div>
     </div>
     </div>
-
     <div class="container">
         <div class="jumbotron">
             <div class="card-group">
                 <div class="card">
-
                     <div class="card-body">
                         <h2 class="card-title">FEMALE</h2>
                         <p class="card-text">This are female names according to the days of the week.</p>
@@ -50,7 +47,6 @@
                     </div>
                 </div>
                 <br><br>
-
                 <div class="card">
                     <div class="card-body">
                         <h2 class="card-title">MALE</h2>
@@ -69,58 +65,74 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
         <div class="container">
             <div class="jumbotron">
                 <div class="form">
                     <h3>Enter Your Birthdate Here To Get Your Akan Name:</h>
-                        <form>
-                            <div class="form-group">
-                                <label for="exampleInputCentuary">Century</label>
-                                <input type="number" class="form-control" placeholder="for example 19" id="century"
-                                    value="cc" required min="1" max="30">
+                        <div class="container">
+                            <div class="jumbotron">
+                                <span id="heading">
+                                    <h2>Akan Names</h2>
+                                    <h3>Find Your Akan Name</h3>
+                                </span>
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="centuary">Centuary:</label>
+                                        <div class="col-sm-10">
+                                            <input type="number" class="form-control" id="centuary"
+                                                placeholder="I.e 20 if born in the 20th centuary">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="year">Year:</label>
+                                        <div class="col-sm-10">
+                                            <input type="number" class="form-control" id="year"
+                                                placeholder="Enter year">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="month">Month:</label>
+                                        <div class="col-sm-10">
+                                            <input type="number" class="form-control" id="month"
+                                                placeholder="Enter Month">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-2" for="day">day:</label>
+                                        <div class="col-sm-10">
+                                            <input type="number" class="form-control" id="day" placeholder="Enter day">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Select gender:</label>
+                                        <div class="col-sm-10">
+                                            <select class="form-control " id="gender">
+                                                <option value=""></option>
+                                                <option value="Male"> Male</option>
+                                                <option value="Female">Female</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="submit" class="btn btn-success"
+                                                onclick="ghana()">Submit</button>
+                                            <button type="reset" class="btn btn-danger">Reset</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleInputYear">Year</label>
-                                <input type="number" class="form-control" placeholder="for example 90" id="year"
-                                    value="yy" required min="1" max="100">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputMonth">Month</label>
-                                <input type="number" class="form-control" placeholder="for example 12" id="month"
-                                    value="" required min="1" max="12">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputDayBirth">Date of birth</label>
-                                <input type="DateofBirth" class="form-control" id="date" value="" required min="0"
-                                    max="12">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">Select gender</label>
-                                <div class="col-sm-10">
-                                    <select class="form-control " id="gender">
-                                        <option value=""></option>
-                                        <option value="Male"> Male</option>
-                                        <option value="Female">Female</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <form>
-                                <button onclick="getName()" type="submit" class="btn btn-succes">submit</button>
-                                <button type="unload" onclick="window.location.reload();"
-                                    class="btn btn-outline-danger">Unload</button>
-                            </form>
-                        </form>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    </div>
-
-    <script src="./js/script.js"></script>
+                        </div>
+                        <script src="./js/main.js"></script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                            crossorigin="anonymous">
+                        </script>
 
 </body>
 
