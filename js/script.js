@@ -1,11 +1,27 @@
-function getAkanName() {
-    var gender = document.getElementById("gender").value;
-    var date = document.getElementById("mydate").value;
+var maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
+var femaleName = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
 
-    var CC = parseInt(date.substr(0, 2));
-    var YY = parseInt(date.substr(2, 3));
-    var MM = parseInt(date.substr(5, 7));
-    var DD = parseInt(date.substr(8, 9));
-    var d = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7
-    alert(d)
+function getName() {
+    var century = parseInt(document.getElementById("century").value);
+    var year = parseInt(document.getElementById("year").value);
+    var month = parseInt(document.getElementById("month").value);
+    var date = parseInt(document.getElementById("date").value);
+    var gender = document.getElementById("gender").value;
+    var cc = century;
+    var yy = year;
+    var mm = month;
+    var dd = date;
+    var d = parseInt(((cc / 4) - 2 * cc - 1) + (5 * yy / 4) + (26 * (mm + 1) / 10) + dd) % 7
+    if ((month <= 0) || (month > 12)) {
+        alert("oops!! enter a valid month")
+    } else
+    if ((date <= 0) || (date > 31)) {
+        alert("oops!! enter a valid day")
+    } else
+    if (gender === "Male") {
+        alert("your akan name is " + maleNames[d])
+    } else
+    if (gender === "Female") {
+        alert("your akan name is " + femaleNames[d])
+    }
 }

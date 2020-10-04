@@ -6,23 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <title>AkanNames</title>
 </head>
 
 <body>
+
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">AKAN NAMES</h1>
-            <p class="lead">The Akan people of Ghana frequently name their children after the day of the week they
-                were born and the order in which they were born. These "day names" have further meanings concerning
-                the soul and character of the person. Middle names have considerably more variety and can refer to
+            <p class="lead">The Akan people of Ghana frequently name their children after the day of the week
+                they
+                were born and the order in which they were born. These "day names" have further meanings
+                concerning
+                the soul and character of the person. Middle names have considerably more variety and can refer
+                to
                 their birth order, twin status, or an ancestor's middle name.
             </p>
         </div>
     </div>
     </div>
     </div>
-
 
     <div class="container">
         <div class="jumbotron">
@@ -46,8 +50,8 @@
                     </div>
                 </div>
                 <br><br>
-                <div class="card">
 
+                <div class="card">
                     <div class="card-body">
                         <h2 class="card-title">MALE</h2>
                         <p class="card-text">This are male names according to the days of the week</p>
@@ -65,39 +69,58 @@
                     </div>
                 </div>
             </div>
+
+
         </div>
-
-        <div class="form">
-            <h3>Enter Your Birthdate Here:</h>
-                <div class="add-stylist-form">
-                    <form>
-                        <div class="form-group mb15">
-                            <label class="label">Birthday</label>
-                            <div class="input-group mb15">
-                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                <input type="text" placeholder="mm/dd/yyyy" id="myBirthDate" class="form-control"
-                                    autocomplete="off">
+        <div class="container">
+            <div class="jumbotron">
+                <div class="form">
+                    <h3>Enter Your Birthdate Here To Get Your Akan Name:</h>
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputCentuary">Century</label>
+                                <input type="number" class="form-control" placeholder="for example 19" id="century"
+                                    value="cc" required min="1" max="30">
                             </div>
-                        </div>
-
-                        <div class="form-group mb15">
-                            <label class="label">Gender</label>
-                            <div class="rdio rdio-default fs11">
-                                <input type="radio" name="gender" id="male" value="Male">
-                                <label for="male">&nbsp;&nbsp;Male</label>
+                            <div class="form-group">
+                                <label for="exampleInputYear">Year</label>
+                                <input type="number" class="form-control" placeholder="for example 90" id="year"
+                                    value="yy" required min="1" max="100">
                             </div>
-                            <div class="rdio rdio-default fs11">
-                                <input type="radio" name="gender" value="Female" id="female">
-                                <label for="female">&nbsp;&nbsp;Female</label>
+                            <div class="form-group">
+                                <label for="exampleInputMonth">Month</label>
+                                <input type="number" class="form-control" placeholder="for example 12" id="month"
+                                    value="" required min="1" max="12">
                             </div>
-                        </div>
-                        <button type="submit" onclick="getAkanName(); return false;" class="btn btn-primary btn-xs"><i
-                                class="fa fa-search" aria-hidden="true"></i>&nbsp;&nbsp;Get Akan Name</button>
-                        <button type="reset" onclick="clearAkanMessage(); return false;"
-                            class="btn btn-default btn-xs"><i class="fa fa-times"
-                                aria-hidden="true"></i>&nbsp;&nbsp;Cancel</button>
-                    </form>
+                            <div class="form-group">
+                                <label for="exampleInputDayBirth">Date of birth</label>
+                                <input type="DateofBirth" class="form-control" id="date" value="" required min="0"
+                                    max="12">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Select gender</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control " id="gender">
+                                        <option value=""></option>
+                                        <option value="Male"> Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <form>
+                                <button onclick="getName()" type="submit" class="btn btn-succes">submit</button>
+                                <button type="unload" onclick="window.location.reload();"
+                                    class="btn btn-outline-danger">Unload</button>
+                            </form>
+                        </form>
                 </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="./js/script.js"></script>
 
 </body>
 
